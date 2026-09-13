@@ -8,13 +8,13 @@ int main() {
     // 2. 声明变量 (Variables)
     // 声明一个整数类型的变量，名字叫 age
     int age;
-    int score;
+    // int score;
     // 3. 询问并读取第一个信息
-    printf("请输入你的年龄: ");
+    // printf("请输入你的年龄: ");
     scanf("%d", &age);
-    
+    int score;
     // 4. 询问并读取第二个信息
-    printf("请输入你的高考分数: ");
+    // printf("请输入你的高考分数: ");
     scanf("%d", &score);
     
     // 5. 将变量和文字结合输出
