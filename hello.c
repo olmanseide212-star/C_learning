@@ -92,22 +92,22 @@
 // }
 
 
-// #include <stdio.h>
-// int main() {
-//     int T;
-//     scanf ("%d",&T);
-//     while (T--) {
-//         int n;
-//         scanf ("%d",&n);
-//         if (n % 3 == 1) {
-//             printf("showshowshow\n");
-//         }
-//         else {
-//             printf("forever love\n");
-//         }
-//     }
-//     return 0;
-// }
+#include <stdio.h>
+int main() {
+    int T;
+    scanf ("%d",&T);
+    while (T--) {
+        int n;
+        scanf ("%d",&n);
+        if (n % 3 == 1) {
+            printf("showshowshow\n");
+        }
+        else {
+            printf("forever love\n");
+        }
+    }
+    return 0;
+}
 
 
 // #include <stdio.h>
@@ -147,12 +147,56 @@
 //             printf("%d divisible by 2 and 3? 0\n",n);
 //         }
 //         if (n % 3 == 0 || n % 2 == 0){
-//             printf("%d divisible by 2 or 3? 1",n);
+//             printf("%d divisible by 2 or 3? 1\n",n);
 //         }
 //         else{
-//             printf("%d divisible by 2 or 3? 0",n);
+//             printf("%d divisible by 2 or 3? 0\n",n);
 //         }
-//         if ()
+//         if ( (n % 3 == 0 && n % 2 != 0) || (n % 2 == 0 && n % 3 != 0) ){
+//             printf("%d divisible by 2 or 3, but not both? 1\n",n);
+//         }
+//         else{
+//             printf("%d divisible by 2 or 3, but not both? 0\n",n);
+//         }
+//     }
+//     return 0;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// #include <stdio.h
+// int main() {
+//     int T;
+//     scanf("%d",&T);
+//     while(T--){
+//         char s[50];
+//         scanf("%s",s);
+//         for (int i = 3;i >= 0;i--){
+//             printf("%c",s[i]);
+//         }
+//         printf("\n");
+//     }
+//     return 0;
+// }
+
+
+
+
 
 
 
@@ -185,5 +229,20 @@
 //     else{
 //         printf("BAD\n");
 //     }
+//     return 0;
+// }
+
+
+
+// #include <stdio.h>
+// int main() {
+//     double a,b,c,d,e;
+//     scanf("%lf %lf",&a,&b);
+//     c = a + b;
+//     d = a - b;
+//     e = (a + b) / 2;
+//     printf("%.2f\n",c);
+//     printf("%.2f\n",d);
+//     printf("%.2f\n",e);
 //     return 0;
 // }
