@@ -92,22 +92,22 @@
 // }
 
 
-#include <stdio.h>
-int main() {
-    int T;
-    scanf ("%d",&T);
-    while (T--) {
-        int n;
-        scanf ("%d",&n);
-        if (n % 3 == 1) {
-            printf("showshowshow\n");
-        }
-        else {
-            printf("forever love\n");
-        }
-    }
-    return 0;
-}
+// #include <stdio.h>
+// int main() {
+//     int T;
+//     scanf ("%d",&T);
+//     while (T--) {
+//         int n;
+//         scanf ("%d",&n);
+//         if (n % 3 == 1) {
+//             printf("showshowshow\n");
+//         }
+//         else {
+//             printf("forever love\n");
+//         }
+//     }
+//     return 0;
+// }
 
 
 // #include <stdio.h>
