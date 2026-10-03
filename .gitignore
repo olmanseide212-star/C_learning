@@ -1,0 +1,39 @@
+# macOS
+.DS_Store
+
+# Compiled object files & executables
+*.o
+*.out
+*.dSYM/
+
+# Binaries without extension
+01_basics/day
+01_basics/day2
+01_basics/day3
+01_basics/day5_loops
+01_basics/hello
+01_basics/leap_year
+01_basics/oj_a_plus_b
+01_basics/oj_sum
+01_basics/oj_sun
+01_basics/p1001
+01_basics/rectangle
+01_basics/review_basics
+01_basics/sum_n
+01_basics/test_float
+01_basics/test_greedy
+01_basics/test_pi
+01_basics/test_precision
+02_second_stage/day*
+02_second_stage/find_max
+02_second_stage/max
+!02_second_stage/*.c
+!02_second_stage/*.h
+03_oj_practice/B*
+03_oj_practice/p*
+03_oj_practice/奇迹*
+03_oj_practice/她的*
+!03_oj_practice/*.c
+04_topic_training/0*
+!04_topic_training/*.c
+!04_topic_training/*.md
