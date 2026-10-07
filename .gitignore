@@ -37,3 +37,10 @@
 04_topic_training/0*
 !04_topic_training/*.c
 !04_topic_training/*.md
+
+# Root compiled binaries
+/calc
+/p5725
+/primes
+/saline
+/school_func
