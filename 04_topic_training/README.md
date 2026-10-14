@@ -36,7 +36,8 @@
   - [ ] 03. 数组传参真身修改 (`reverse_array`)
   - [ ] 04. 欧几里得辗转相除法 (`gcd`)
   - [ ] 05. 递归斐波那契与栈终止
-  - [ ] 06. 杭师大校内 OJ 函数专练 (`13_school_oj_functions.c`) —— 【HZNU 1969 等】
+  - [ ] 06. 杭师大校内 OJ 函数专练 (`13_school_oj_functions.c`) —— 【HZNU 1969、1971 素数预处理等】
+- [ ] **专题 06：校内 OJ 进阶实战：嵌套循环与逻辑嵌套 PRO** (`14_school_oj_nested_loops_pro.c`)
 
 
 
