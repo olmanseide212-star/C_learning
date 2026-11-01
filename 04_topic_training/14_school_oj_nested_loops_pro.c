@@ -142,4 +142,29 @@ int main() {
         }
     }
     
+
+
+#include <stdio.h>
+void (){
+    int L,K,count;
+    scanf("%d %d",&L,&K);
+    if (L >= 16) count = (K == 1) ? 12 : 10;
+    else if (L >= 11 && L < 16) count = (K == 1) ? 8 : 7;
+    else if (L >= 6 && L < 11) count = (K == 1) ? 5 : 4;
+    else count = 0;
+    int h[5];
+    for (int i = 1;i <= 5;i ++){
+        scanf("%d",h[i]);
+    }
+    int kill_count = 0;
+    for (int i = 1;i <= 5;i ++){
+        int needed = (h[i] + 299) / 300;
+        if (count >= needed){
+            count -= needed;
+            kill_count ++;
+        }
+        else break;
+    }
+    
+    
     

@@ -228,3 +228,117 @@ int main () {
     }
     return 0;
 }
+
+
+
+
+int com(int n,int m){
+    if (m == 0 || m == n) return 1;
+    return com(n - 1, m - 1) + com(n - 1, m);
+}
+
+
+#include <stdio.h>
+#include <string.h>
+void rever (char str[],int left,int right){
+    while (right > left){
+        char temp = char[left];
+        char [left] = char [right];
+        char [right] = temp;
+        right --;
+        left ++;
+    }
+}
+int main () {
+    int str [205];
+    if (fgets(str,sizeof(str),stdin)) != NULL{
+        int len = strlen(str);
+        if (len > 0 && str[len - 1] == '\n'){
+            str[len - 1] = '\0';
+            len --;
+        }
+        int left = 0;
+        for (int i = 0;i <= len;i ++){
+            if (str[i] == ' ' || str[i] == '\0'){
+                if (start < i) {
+                    rever(str,left,i-1);
+                }
+                left = i + 1;
+            }
+        }
+        printf("%s\n",str);
+    }
+    return 0;
+} 
+
+
+#include <stdio.h>
+#include <string.h>
+void damn (char str[],int left,int right){
+    if (str[left] == 'Q' || str[left] == 'q' ) {
+        for (int i = left; i <= right; i ++){
+             printf("%c",str[i]);
+        }
+        printf("\n");
+    }
+}
+int main () {
+    char str[205];
+    if (fgets(str,sizeof(str),stdin) != NULL){
+        int len = strlen (str);
+        if (len > 0 && str[len-1] == '\n'){
+            str[len - 1] = '\0';
+            len --;
+        }
+        int left = 0;
+        for (int i = 0;i <= len ;i ++){
+            if (str[i] == ' '|| str[i] == '\0'){
+                if (left < i) {
+                    damn(str,left,i -1);
+                }
+                left = i + 1;
+            }
+        }
+    }
+    return 0;
+}
+
+#include <stdio.h>
+int main (){
+    int n,m;
+    scanf("%d %d",&n,&m);
+    int a[n][m];
+    for (int i = 0;i < n;i ++){
+        for (int j = 0;j < m;j ++){
+            scanf("%d",&a[i][j]);
+        }
+    }
+    for (int i = 0;i < n;i ++){
+        int min = a[i][0];
+        int min_col = 0;
+        for (int j = 1;j < m;j ++){
+            if (a[i][j] < min) {
+                min_col = j;min = a[i][j];
+            }
+        }
+        int is_damn = 1;
+        for (int j = 0;j < n;j ++){
+            if (a[j][min_col] > min){
+                is_damn = 0;break;
+            }
+        }
+        if (is_damn){
+            printf("(%d,%d)\n",i+1,min_col+1);
+            return 0;
+        }
+    }
+    return 0;
+}
+
+
+            
+
+
+
+
+    
