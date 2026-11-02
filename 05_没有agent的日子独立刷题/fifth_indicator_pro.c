@@ -146,29 +146,46 @@
 // }
 
 //H函数训练之爬楼梯
-#include <stdio.h>
-int pa(int h){
-    int count = 0;
-    for (int i = 0;3 * i <= h;i ++){
-        h -= 3 * i;
-        for (int j = 0;2 * j <= h;j ++){
-            count ++;
-        }
-    }
-    return count;
-}
-int main (){
-    int T;
-    if (scanf("%d",&T) != EOF){
-        while(T--){
-            int h;
-            scanf("%d",&h);
-            printf("%d\n",pa(h));
-        }
-    }
-    return 0;
-}
+// #include <stdio.h>
+// int pa(int h){
+//     int count = 0;
+//     for (int i = 0;3 * i <= h;i ++){
+//         h -= 3 * i;
+//         for (int j = 0;2 * j <= h;j ++){
+//             count ++;
+//         }
+//     }
+//     return count;
+// }
+// int main (){
+//     int T;
+//     if (scanf("%d",&T) != EOF){
+//         while(T--){
+//             int h;
+//             scanf("%d",&h);
+//             printf("%d\n",pa(h));
+//         }
+//     }
+//     return 0;
+// }
 
+//上面写错了，这题要使用递归
+#include <stdio.h>
+int happy(int h){
+    if (h == 1) return 1;
+    if (h == 2) return 2;
+    if (h == 3) return 4;
+    return (happy(h-1) + happy(h-2) + happy(h-3));
+}
+int main(){
+    int T;
+    scanf("%d",&T);
+    while(T--){
+        int h;
+        scanf("%d",&h);
+        printf("%d\n",happy(h));
+    }
+}
 
 
 
