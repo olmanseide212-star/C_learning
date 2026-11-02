@@ -45,3 +45,14 @@
 /saline
 /school_func
 /nested_pro
+
+# 05 独立刷题目录 - 编译产物
+05_没有agent的日子独立刷题/fifth_indicator_pro
+05_没有agent的日子独立刷题/forth_function_pro
+05_没有agent的日子独立刷题/sixth_arr
+05_没有agent的日子独立刷题/tempCodeRunnerFile
+# 通配：未来该目录下所有无扩展名二进制（不含 .c/.h/.md）
+05_没有agent的日子独立刷题/*
+!05_没有agent的日子独立刷题/*.c
+!05_没有agent的日子独立刷题/*.h
+!05_没有agent的日子独立刷题/*.md
